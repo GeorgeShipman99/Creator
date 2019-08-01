@@ -1,0 +1,13 @@
+[user]
+	email = george@symbiancreate.co.uk
+	name = George Shipman
+[core]
+	autocrlf = false
+	eol = LF
+[diff]
+	renamelimit = 5000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
