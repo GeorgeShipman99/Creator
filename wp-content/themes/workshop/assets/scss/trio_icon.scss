@@ -1,0 +1,106 @@
+html {
+    body {
+        .wrapper {
+            .trio_icon {
+                background-size:cover !important;
+                background-repeat: no-repeat !important;
+                background-attachment: scroll !important;
+                text-align:center;
+                height: auto;
+                margin-top: 3em;
+                margin-bottom:3em;
+                display: inline-block;
+                position: relative;
+                clear: both;
+
+                @media (max-width: 767px) { }
+
+                .container {
+                    display:inline-block;
+
+                    .iconbox {
+                        display:block;
+                        position:relative;
+                        float:left;
+                        width:33.333%;
+                        padding:1.5em;
+                        color:inherit;
+                        text-align:inherit;
+
+                        @media (max-width: 767px) {
+                            width:90%;
+                            clear:both;
+                            float:none;
+                            margin:0 auto;
+                            min-width:240px;
+                        }
+
+                        span.icon {
+                            display: block;
+                            position: relative;
+                            float: left;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 25px;
+                            background: $accent;
+                            margin-right:20px;
+
+                            @media (max-width: 1068px) {
+                                margin:.5em auto .75em;
+                                display:block;
+                                float:none;
+                                clear:both;
+                            }
+
+                            svg {
+                                display:block;
+                                position:absolute;
+                                top:50%;
+                                left:50%;
+                                width:70%;
+                                height:auto;
+                                -webkit-transform: translate(-50%,-50%);
+                                -moz-transform: translate(-50%,-50%);
+                                -ms-transform: translate(-50%,-50%);
+                                -o-transform: translate(-50%,-50%);
+                                transform: translate(-50%,-50%);
+
+                                path {
+                                    fill:white;
+                                }
+                            }
+                        }
+
+                        .content {
+                            display:block;
+                            position:relative;
+                            float:left;
+                            text-align:left;
+                            width:calc(100% - 70px);
+
+                            @media (max-width: 1068px) {
+                                text-align:center;
+                                margin:1em auto 0em;
+                                float:none;
+                                width:100%;
+                                padding:0em 1em;
+                            }
+
+                            @media (max-width: 996px) {
+                                font-size:.8em;
+                            }
+
+                            @media (max-width: 767px) {
+                                font-size:1em;
+                            }
+                        }
+
+                        &:nth-of-type(3n + 1) {
+                            clear:both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

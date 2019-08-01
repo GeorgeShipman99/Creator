@@ -1,0 +1,10 @@
+2019-07-29T10:24:13+00:00 CRITICAL syntax error, unexpected ',' in C:\xampp\htdocs\creator\wp-content\themes\workshop\parts\map.php on line 19
+
+2019-07-29T14:24:04+00:00 CRITICAL syntax error, unexpected '!', expecting '(' in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 53
+
+2019-07-29T14:24:07+00:00 CRITICAL syntax error, unexpected '!', expecting '(' in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 53
+
+2019-07-29T14:24:30+00:00 CRITICAL syntax error, unexpected '!', expecting '(' in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 53
+
+2019-07-29T14:25:20+00:00 CRITICAL syntax error, unexpected 'is_page_template' (T_STRING), expecting '(' in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 54
+

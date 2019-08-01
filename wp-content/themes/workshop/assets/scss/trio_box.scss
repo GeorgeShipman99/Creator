@@ -1,0 +1,95 @@
+html {
+    body {
+        .wrapper {
+            .trio-box {
+                margin:2em auto;
+
+                .container {}
+
+                h2.column_title, p.column_subtitle {
+                    text-align:center;
+                }
+
+                article, .article {
+                    width: calc(33.3% - .6666em);
+                    margin-bottom: 1em;
+                    float: left;
+                    margin-right: 1em;
+                    overflow: hidden;
+                    background: transparent;
+
+                    &:nth-of-type()3n {
+                        margin-right:0em;
+                        @media (max-width: 768px) { margin-right:auto; }
+                    }
+
+                    &:nth-of-type(3n + 1) { clear:both; }
+
+                    @media (max-width: 768px) { 
+                        width:100%;
+                        max-width:530px;
+                        float:none; max-width: none;
+                        margin: 1em 0;
+                    }
+
+                    .featured {
+                        position: relative;
+                        display:block;
+                        float:left;
+                        width:100%;
+                        height: 0;
+                        padding-bottom: 120%;
+                        overflow:hidden;
+
+                        &:focus, &:hover  {
+                            img { width: 110%;}
+                        }
+
+                        img {
+                            display: block;
+                            height: auto;
+                            width: 100%;
+                            position: absolute;
+                            z-index: 1;
+                            -webkit-transform: translate(-50%,-50%);
+                            -moz-transform: translate(-50%,-50%);
+                            -o-transform: translate(-50%,-50%);
+                            transform: translate(-50%,-50%);
+                            left: 50%;
+                            top:50%;
+                            -webkit-transition: all 100ms ease-in;
+                            -moz-transition: all 100ms ease-in;
+                            -o-transition: all 100ms ease-in;
+                            transition: all 100ms ease-in;
+                        }
+
+                        .details {
+                            display:block;
+                            position:relative;
+                            z-index:2;
+                            float:left;
+                            width:100%;
+                            padding: 1em 1.5em;
+                            color:#222;
+                            text-align:left;
+
+                            h3 { 
+                                text-transform:uppercase;
+
+                                a { 
+                                    text-decoration:none;
+                                    &:hover, &:focus {
+                                        text-decoration:none;
+                                        outline:0px;
+                                    }
+                                }
+                            }
+
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+html {
+    body {
+        .wrapper {
+            .carousels {
+                display:block;
+
+                .container { }
+
+                h2.column_title, p.column_subtitle {
+                    text-align:center;
+                }
+
+                .button { margin-top:2em; }
+
+                .imgslider {
+                    width: 100%;
+                    position: relative;
+                    background: transparent;
+                    display: block;
+                    margin: 0em auto 2em;
+                    float: none;
+                    z-index: 0;
+                    min-height: 550px;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        min-height: 0;
+                    }
+
+                    @media (max-width: 575px) { 
+                        width: 100vw;
+                        position: relative;
+                        left: 50%;
+                        right: 50%;
+                        margin-left: -50vw;
+                        margin-right: -50vw;
+                    } 
+
+                    .flex-viewport {
+                        overflow:hidden !important;
+                    }
+
+                    .slides {
+                            overflow:hidden;
+
+                        li {
+
+                            .article {
+                                width:100%;
+
+                                .details {
+                                    bottom:0;
+                                    background: rgba(0,0,0,0.5);
+                                    position:absolute;
+                                    display:block;
+                                    float:left;
+                                    width:100%;
+                                    padding: 1rem 1.5rem;
+                                    color:#fff;
+                                    transition:all 150ms ease-in-out;
+                                    -webkit-transition:all 150ms ease-in-out;
+                                    -moz-transition:all 150ms ease-in-out;
+                                    -ms-transition:all 150ms ease-in-out;
+                                    -o-transition:all 150ms ease-in-out;
+
+                                    @media (max-width: 1084px) {
+                                        opacity: 1;
+                                        background: rgba(29,29,27,0.5);
+                                    }
+
+                                    @media (max-width:575px) {
+                                        bottom:inherit;
+                                        display:block;
+                                        float:none;
+                                        width:100%;
+                                        height:auto;
+                                        padding: 1.5rem;
+                                        -webkit-transform: translateY(-100%);
+                                        -moz-transform: translateY(-100%);
+                                        -ms-transform: translateY(-100%);
+                                        -o-transform: translateY(-100%);
+                                        transform: translateY(-100%);
+                                    }
+                                            
+                                    h4 { 
+                                        text-transform:none;
+                                        padding:0;
+                                        margin:0 0 .5em;
+                                    }
+
+                                    p { 
+                                        color:#fff;
+                                        padding:0;
+                                        margin: 0 0 .5em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}       
+
+

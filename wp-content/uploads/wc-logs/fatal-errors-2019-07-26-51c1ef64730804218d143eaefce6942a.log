@@ -1,0 +1,52 @@
+2019-07-26T10:12:36+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\creator\wp-content\plugins\advanced-custom-fields-pro\includes\acf-field-functions.php on line 1287
+
+2019-07-26T13:10:50+00:00 CRITICAL syntax error, unexpected '.', expecting case (T_CASE) or default (T_DEFAULT) or '}' in C:\xampp\htdocs\creator\wp-content\themes\workshop\woocommerce\global\wrapper-start.php on line 48
+
+2019-07-26T13:11:15+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\creator\wp-content\themes\workshop\woocommerce\global\wrapper-start.php on line 48
+
+2019-07-26T13:39:25+00:00 CRITICAL syntax error, unexpected '||' (T_BOOLEAN_OR) in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 1
+
+2019-07-26T13:39:29+00:00 CRITICAL syntax error, unexpected '||' (T_BOOLEAN_OR) in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 1
+
+2019-07-26T13:40:05+00:00 CRITICAL syntax error, unexpected '||' (T_BOOLEAN_OR) in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 1
+
+2019-07-26T13:43:29+00:00 CRITICAL Uncaught Error: Call to undefined function is_() in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php:1
+Stack trace:
+#0 C:\xampp\htdocs\creator\wp-content\themes\workshop\header.php(56): include()
+#1 C:\xampp\htdocs\creator\wp-includes\template.php(688): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\creator\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#3 C:\xampp\htdocs\creator\wp-includes\general-template.php(41): locate_template(Array, true)
+#4 C:\xampp\htdocs\creator\wp-content\themes\workshop\front-page.php(1): get_header()
+#5 C:\xampp\htdocs\creator\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\creator\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\creator\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 1
+
+2019-07-26T13:43:31+00:00 CRITICAL Uncaught Error: Call to undefined function is_() in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php:1
+Stack trace:
+#0 C:\xampp\htdocs\creator\wp-content\themes\workshop\header.php(56): include()
+#1 C:\xampp\htdocs\creator\wp-includes\template.php(688): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\creator\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#3 C:\xampp\htdocs\creator\wp-includes\general-template.php(41): locate_template(Array, true)
+#4 C:\xampp\htdocs\creator\wp-content\themes\workshop\front-page.php(1): get_header()
+#5 C:\xampp\htdocs\creator\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\creator\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\creator\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\creator\wp-content\themes\workshop\sections\headers\header1.php on line 1
+
+2019-07-26T14:58:14+00:00 CRITICAL Uncaught Error: Call to undefined function the_page_title() in C:\xampp\htdocs\creator\wp-content\themes\workshop\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\creator\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\creator\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\creator\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\creator\wp-content\themes\workshop\index.php on line 8
+
+2019-07-26T16:33:10+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\creator\wp-includes\formatting.php on line 543
+
+2019-07-26T16:34:59+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\creator\wp-includes\functions.php on line 33
+
+2019-07-26T16:36:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\creator\wp-content\themes\workshop\parts\layouts.php on line 1
+

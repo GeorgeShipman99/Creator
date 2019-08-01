@@ -1,0 +1,31 @@
+{
+  "name": "Symbian",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "buildmono-css": "node-sass --include-path scss assets/scss/style.scss assets/css/stylemono.css",
+    "buildcontrast-css": "node-sass --include-path scss assets/scss/style.scss assets/css/stylecontrast.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "George Shipman",
+  "license": "ISC",
+  "keywords": [],
+  "description": "Symbian Create website",
+  "dependencies": {
+    "html-minifier": "^3.5.8",
+    "js-beautify": "^1.7.5",
+    "minjson": "0.0.2",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11",
+    "sqwish": "^0.2.2",
+    "svgo": "^1.0.3",
+    "uglify": "^0.1.5",
+    "uglify-js": "^3.3.9"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.1.10"
+  }
+}

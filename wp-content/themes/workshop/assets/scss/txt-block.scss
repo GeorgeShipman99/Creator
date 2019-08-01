@@ -1,0 +1,241 @@
+html {
+    body {
+        .wrapper {
+            .txt-block {
+                position: relative;
+            	margin:2em auto;
+            	padding-bottom:0em;
+            	padding-top:0em;
+
+                @media (max-width: 768px) { 
+                    margin:0em auto;
+                }
+
+                .container {
+                    margin-top:0;
+                    margin-bottom:0;
+                    padding-top:0em;
+                    padding-bottom:0em;
+                }
+
+                .text {
+                    margin-top:0;
+                    margin-bottom:0;
+                    padding-top:3em;
+                    padding-bottom:2em;
+
+                    img.size-full {
+                        display:block;
+                        width:100%;
+                        height:auto;
+                    }
+                }
+
+                .full { 
+                    padding-left:0%;
+                    padding-right:0%;
+                    @media (max-width: 575px) { 
+                        padding-left:0%;
+                        padding-right:0%;
+                    }
+                }
+                .nearly { 
+                    padding-left:5%;
+                    padding-right:5%;
+                    @media (max-width: 575px) { 
+                        padding-left:0%;
+                        padding-right:0%;
+                    }
+                }
+                .three_quarter { 
+                    padding-left:12.5%;
+                    padding-right:12.5%;
+                    
+                    @media (max-width: 575px) { 
+                        padding-left:0%;
+                        padding-right:0%;
+                    }
+                }
+                .three-fifth { 
+                    padding-left:20%;
+                    padding-right:20%;
+
+                    @media (max-width: 575px) { 
+                        padding-left:5%;
+                        padding-right:5%;
+                    }
+                }
+            }
+
+            .text-block {
+                margin-bottom:30px;
+
+                @media (max-width: 768px) { text-align:center;}
+
+                h1 {
+                    font-size: 2.8em;
+                    @media (max-width: 1028px) { font-size: 2.6em; }
+                    @media (max-width: 500px) { font-size: 1.4em;   }
+                }
+
+                h2 {
+                    font-size: 2.4em;
+                    line-height: 1.13em;
+                    @media (max-width: 1028px) { font-size: 2.2em;  }
+                    @media (max-width: 500px) { font-size: 1.3em;  }
+                }
+
+                h3 {
+                    font-size: 1.7em;
+                    line-height: 1.15em;
+                    @media (max-width: 1028px) { font-size: 1.5em; }
+                    @media (max-width: 500px) { font-size: 1.1em;  }
+                }
+
+                ul {
+                    text-align:left;
+                }
+
+            }
+
+            .column_title, .column_footnote {
+                -webkit-columns: 20px 1; /* Chrome, Safari, Opera */
+                -moz-columns: 20px 1; /* Firefox */
+                columns: 20px 1;
+                @media (max-width: 768px) { text-align:center;}
+            }
+
+            .column_title {
+                font-size: 1.5em;
+                font-weight: bolder;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                @media (max-width: 1028px) { font-size: 1.3em; }
+                @media (max-width: 500px) { font-size: 1.1em;  }
+            }
+
+                 
+
+            .column_subtitle {
+                font-size: 1.2em;
+                line-height: 1.15em;
+                color: $opposite;
+                font-weight: 500;
+                margin: 0 0 26px;
+
+                strong { color:$accent;}
+            }
+
+             .column_footnote {
+                font-style: italic;
+                font-weight: 100;
+             }
+
+            .one_col {
+                -webkit-columns: 20px 1; /* Chrome, Safari, Opera */
+                -moz-columns: 20px 1; /* Firefox */
+                columns: 20px 1;
+            }
+
+            .two_col  {
+                -webkit-columns: 20px 2; /* Chrome, Safari, Opera */
+                -moz-columns: 20px 2; /* Firefox */
+                columns: 20px 2;
+
+                @media (max-width: 768px) { 
+                	-webkit-columns: 20px 1; /* Chrome, Safari, Opera */
+                	-moz-columns: 20px 1; /* Firefox */
+                	columns: 20px 1;
+                }
+            }
+
+            .three_col {
+                font-size:.9em;
+                -webkit-columns: 30px 3; /* Chrome, Safari, Opera */
+                -moz-columns: 30px 3; /* Firefox */
+                columns: 30px 3;
+
+                @media (max-width: 1024px) { 
+                	-webkit-columns: 30px 2; /* Chrome, Safari, Opera */
+                	-moz-columns: 30px 2; /* Firefox */
+                	columns: 30px 2;
+                }
+
+                @media (max-width: 768px) { 
+                	-webkit-columns: 30px 1; /* Chrome, Safari, Opera */
+                	-moz-columns: 30px 1; /* Firefox */
+                	columns: 30px 1;
+                }
+            }
+
+            .four_col {
+                font-size:.8em;
+                -webkit-columns: 30px 4; /* Chrome, Safari, Opera */
+                -moz-columns: 30px 4; /* Firefox */
+                columns: 30px 4;
+
+                @media (max-width: 768px) {
+                    font-size:.9em; 
+                    -webkit-columns: 30px 1; /* Chrome, Safari, Opera */
+                    -moz-columns: 30px 1; /* Firefox */
+                    columns: 30px 1;
+                }
+            }
+
+            .align_center { text-align:center; }
+            .align_right { text-align:right;}
+            .align_justify { text-align:justify; }
+            .align_left {   text-align:left; }
+
+            .align_center.two_col { 
+                text-align:center;
+                p {
+                    text-align:justify;
+                }
+            }
+            .align_center.three_col { 
+                text-align:center;
+                p {
+                    text-align:justify;
+                }
+            }
+            .align_center.four_col { 
+                text-align:center;
+                p {
+                    text-align:justify;
+                }
+            }
+
+
+            .no_border_bottom {
+            	border-bottom: 0px;
+            }
+
+            .border_bottom {
+            	border-bottom: 1px solid #ccc;
+            }
+
+            .white_out {
+                color:#fff !important;
+                h1, h2, h3, h4, h5, p { color:#fff !important; } 
+            }
+
+
+
+            .jobs_block {
+                &:last-of-type {
+                    .container {
+                        .text{
+                            border-bottom:0;
+                        }
+                    }
+                }
+                .container {
+                    .text { border-bottom: 1px dotted $accent; }
+                }
+            }
+        }
+    }
+}
+
+

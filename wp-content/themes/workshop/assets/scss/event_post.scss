@@ -1,0 +1,96 @@
+html {
+    body {
+        .event {
+            .container {
+                .heading {
+                    position:relative;
+
+                    .band_image {
+                        position: relative;
+                        max-width: 600px;
+                        width: 100%;
+                        margin-bottom: 4em;
+
+                        .image {
+                            position:relative;
+                            width:100%;
+                            padding-bottom: 100%;
+                            overflow:hidden;
+
+                            img {
+                                position: absolute;
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                margin: 0;
+                                left: 50%;
+                                top: 50%;
+                                -webkit-transform: translate(-50%,-50%);
+                                -moz-transform: translate(-50%,-50%);
+                                -o-transform: translate(-50%,-50%);
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+
+                        .deets {
+                            display: block;
+                            position: absolute;
+                            width:auto;
+                            left: -1em;
+                            top: .6em;
+
+                            .date {
+                                display: block;
+                                position: relative;
+                                font-size: 1.6em;
+                                font-weight: bolder;
+                                text-transform: uppercase;
+                                background: $opposite;
+                                color: #fff;
+                                padding: .6em;
+                                pointer-events:none;
+                                
+                                span {}
+                            }
+
+                            .time {
+                                display: block;
+                                position: relative;
+                                font-size: 1em;
+                                background: $accent;
+                                color: #fff;
+                                padding: .6em .9em;
+                                pointer-events:none;
+                                
+                                span {}
+                            }
+                        }
+                    }
+
+                    h1 {
+                        display:inline;
+                        position:absolute;
+                        left:45%;
+                        top:50%;
+                        max-width:55%;
+                        -webkit-transform:translateY(-50%);
+                        -moz-transform:translateY(-50%);
+                        -o-transform:translateY(-50%);
+                        transform:translateY(-50%);
+                        text-align:left;
+                        background:$opposite;
+                        color:#fff;
+                        margin: 0;
+                        padding: 0;
+                        padding-left:10px;
+                        padding-right:10px;
+                    } 
+                }
+
+                .video_wrapper {
+                    margin: 0em auto 1em;
+                }               
+            }
+        }
+    }
+}     

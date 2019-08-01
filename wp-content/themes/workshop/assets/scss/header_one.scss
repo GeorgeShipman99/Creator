@@ -1,0 +1,577 @@
+html {
+    body {
+        .header {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height:auto;
+            left:0px;
+            z-index:1000;
+            margin-bottom: 0em;
+
+            nav.top-navigation {
+                display:block;
+                height: 70px;
+                width:100%;
+                background: -moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 1%, rgba(0,0,0,0.3) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 1%,rgba(0,0,0,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 1%,rgba(0,0,0,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#4d000000',GradientType=0 );
+                color:#fffff;
+
+                .nav-container {
+                    margin:0 auto;
+                    padding-top:1em;
+                    padding-bottom:1em;
+                    width:100%;
+                    height: 100%;
+                    position: relative;
+
+                    div.right_nav {
+                        position:absolute;
+                        right:3em;
+                        top:64%;
+                        -webkit-transform:translateY(-50%);
+                        -moz-transform:translateY(-50%);
+                        -o-transform:translateY(-50%);
+                        transform:translateY(-50%);
+                        margin:0;
+                        font-size:.8em;
+
+                        @media (max-width: 1024px) { 
+                            position: relative;
+                            float: right;
+                            max-width: auto;
+                            height: auto;
+                            //
+                            right:auto;
+                            -webkit-transform:translateY(-50%);
+                            -moz-transform:translateY(-50%);
+                            -o-transform:translateY(-50%);
+                            transform:translateY(-50%);
+                        }
+
+                        @media (max-width: 585px) { 
+                            display:block;
+                        }
+                        
+                        a { 
+                            display:inline;
+                             @media (max-width: 575px){ float: right; }
+                        }
+
+                        a.phone-icon, a.map-icon, a.member-icon, a.like-icon, a.bag-icon {
+                            position:relative;
+                            width:30px;
+                            height:40px;
+                            display:block;
+                            float:left;
+                            position:relative;
+                            margin: 5px;
+                            border-bottom: 3px solid transparent;
+                            -webkit-transition: all ease-in 50ms;
+                            -moz-transition: all ease-in 50ms; 
+                            -o-transition: all ease-in 50ms; 
+                            transition: all ease-in 50ms;
+
+                            @media (max-width: 585px) { 
+                                margin: 5px 0px;
+                            }
+
+                            .icon {
+                                position:relative;
+                                width:100%;
+                                height:100%;
+
+                                svg {
+                                    width:100%;
+                                    height:100%;
+                                    
+                                    .st0 {
+                                        fill:white;
+                                        -webkit-transform: scale(.7);
+                                        -moz-transform: scale(.7);
+                                        -o-transform: scale(.7);
+                                        transform: scale(.7);
+                                    }
+                                }
+                            }
+                        }
+
+                        .bag-icon {
+                            .cart-total {
+                                position: relative;
+                                display: block;
+                                top: -28px;
+                                left: 15px;
+                                width: 25px;
+                                height: 25px;
+                                font-size: 1em;
+                                line-height:0;
+                                background: $accent;
+                                color: #fff;
+                                text-align: center;
+                                padding: 12.5px 0;
+                                -webkit-border-radius: 30px;
+                                -moz-border-radius: 30px;
+                                border-radius: 30px;
+                            }
+
+                            &:hover {text-decoration:none;}
+                        }
+
+
+                    }
+
+
+                    a.logo {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        width: 100%;
+                        height: auto;
+                        max-width: 140px;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        transform: translateY(-50%);
+
+                        @media (max-width: 1024px) { 
+                            position: relative;
+                            float: left;
+                            left:auto;
+                            right:auto;
+                            max-width: 100px;
+                        }
+                        @media (max-width: 575px) { width: 220px; }
+
+                        img {
+                            display: block;
+                            width:100%;
+                            height:auto;                         
+                        }
+                    }
+                }
+            }
+
+            nav.main-navigation {
+                position:relative;
+                display:block;
+                width:100%;
+                height:auto;
+                background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.01) 97%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.01) 97%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.01) 97%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000',GradientType=0 );
+
+                .nav-container {
+                    margin: 0 auto;
+                    padding: 0%;
+                    width:100%;
+                    position: relative;
+
+                    .main-nav-bar {
+                        position:relative;
+                        width: 100%;
+                        height: 50px;
+                        padding-top: 0;
+                        padding-bottom: 0;
+
+                        @media (max-width: 776px) { 
+                            width:100%;
+                            left:0;
+                            bottom:inherit;
+                            top:0;
+                        } 
+
+                        div {
+                            position: absolute;
+                            display: block;
+                            left:50%;
+                            -webkit-transform: translateX(-50%);
+                            -moz-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            width: 100%;
+                            text-align:center;
+                            margin: 0 auto;
+                            z-index:9999;
+                    
+                            @media (max-width: 776px) { 
+                                display:none;
+                                top: -1.5em;
+                                padding: .5em;
+                                z-index: 0;
+                            }
+
+                            ul {
+                                display: block;
+                                margin:0 auto;
+                                padding: 0em;
+                                width: 100%;
+                                position: relative;
+
+                                @media (max-width: 776px) {
+                                    display: block;
+                                    background:$opposite;
+                                    padding: 5em 0 3em;
+                                    border: 1px solid $accent;
+                                    border-bottom: 4px solid $accent;
+                                }
+                                
+                                li {
+                                    position: relative;
+                                    display: inline-block;
+                                    float: none;
+                                    height: auto;
+                                    line-height: 50px;
+                                    margin-bottom: 0;
+                                    width: auto;
+                                    font-size: 16px;
+                                    font-weight:600;
+                                    text-align: center;
+                                    text-transform:uppercase;
+                                    padding: 0 .5em;
+                                    text-transform: uppercase;
+                                    -webkit-transition: all .2s;
+                                    -moz-transition: all .2s;
+                                    -o-transition: all .2s;
+                                    transition: all .2s;
+
+                                    &:hover, &:focus {
+                                        @media (max-width: 776px) { background:transparent;}
+
+                                        a { color:white; }
+
+                                        ul {
+                                            display:block;
+
+                                            @media (max-width: 776px) { 
+                                                display:inline-block;
+                                            }
+
+                                            li {
+                                                a {
+                                                    color:white;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    @media (max-width: 776px) {
+                                        font-size: 16px;
+                                        line-height: 180%;
+                                        padding: 0;
+                                        width: 100%;
+                                    }
+                                                   
+                                    a {
+                                        color: white;
+                                        -webkit-transition: all 40ms;
+                                        -moz-transition: all 40ms;
+                                        -o-transition: all 40ms;
+                                        transition: all 40ms;
+                                        position: relative;
+
+                                        &:hover { text-decoration: none; }
+
+                                        @media (max-width: 776px) { padding:0; }
+                                    }
+
+
+                                    ul {
+                                        display:none;
+                                        background: $opposite;
+                                        position: absolute;
+                                        left: 0;
+                                        width: auto;
+                                        min-width: 200px;
+                                        padding: 0 0 1em;
+                                        border-bottom:6px solid $accent;
+                                        margin: 0;
+                                        clear: both;
+
+                                        @media (max-width: 776px) {
+                                            width: 100%;
+                                            background: transparent;
+                                            display: block;
+                                            position: relative;
+                                            border-bottom: 0px solid;
+                                            min-width: 200px;
+                                            padding: 0 0 1em 0;
+                                            margin: 0;
+                                            border: 0;
+                                        }
+
+                                        li {
+                                            background-color: transparent;
+                                            position: relative;
+                                            text-align: left;
+                                            float: none;
+                                            clear: both;
+                                            padding-top: .4em;
+                                            padding-bottom: .4em;
+                                            line-height: 120%;
+                                            width: 100%;
+                                            font-weight:400;
+                                            font-size: inherit;
+                                            text-transform: none;
+                                            margin: 0;
+
+                                            &:first-of-type { 
+                                                padding-top:2em;
+                                                @media (max-width: 776px) { padding-top:initial;}
+                                            }
+
+                                            &:hover, &:focus { 
+                                                a { 
+                                                    color:white;
+                                                    text-decoration:none;
+                                                }
+
+                                                &:before {
+                                                    @media (max-width: 776px) {
+                                                        content:' - ';
+                                                        display:inline;
+                                                        position:relative;
+                                                    }
+                                                }
+
+                                                a {
+                                                    padding:0;
+                                                    margin:0;
+
+                                                    &:hover, &:focus {
+                                                        color:white;
+                                                        text-decoration:none;
+                                                    }
+                                                }
+                                            }
+
+                                            @media (max-width: 776px) { 
+                                                padding: 0;
+                                                text-align: center;
+                                                line-height: 180%;
+                                            }
+
+                                        }
+
+                                        &:before { display:none; }    
+                                    }       
+                                }
+
+                                li.menu-item-has-children {
+
+                                    &:after {
+                                        content:'\25BE';
+                                        display:inline;
+                                        color: white;
+                                        @media (max-width: 776px) { 
+                                            display:none;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        &:after {
+                                            color: white;
+                                        }
+                                    }
+
+                                    @media (max-width: 776px) {
+                                        a {color: $light;}
+
+                                        ul {
+                                            li {
+                                                a {
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            } 
+                        }
+                    }
+
+                    .fixed_nav {
+                        position:fixed !important;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                    }
+
+                    .menuBtn {
+                        display: none;
+                        width: 45px;
+                        height: 24px;
+                        left: 40px;
+                        top: 50%;
+                        left: 50%;
+                        position: absolute;
+                        z-index: 9999;
+                        -webkit-transform: translate(-50%,-50%) scale(.8);
+                        -moz-transform: translate(-50%,-50%) scale(.8);
+                        -o-transform: translate(-50%,-50%) scale(.8);
+                        transform: translate(-50%,-50%) scale(.8);
+                        -webkit-transition: all 0ms ease-in-out;
+                        -moz-transition: all 0ms ease-in-out;
+                        -o-transition: all 0ms ease-in-out;
+                        transition: all 0ms ease-in-out;
+                        cursor: pointer;
+
+                        &:link {}
+                        &:visited {}
+                        &:hover span {background: #f5f5f5;}
+                        &:active span {background: white;}
+                        &:focus span {background: #f5f5f5;}
+                        
+                        @media (max-width: 776px) {display:block;}
+                        
+                        span {
+                            display: block;
+                            position: absolute;
+                            height: 4px;
+                            width: 100%;
+                            background: #fff;
+                            opacity: 1;
+                            left: 0;
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                            -webkit-transition: all 100ms ease-in-out;
+                            -moz-transition: all 100ms ease-in-out;
+                            -o-transition: all 100ms ease-in-out;
+                            transition: all 100ms ease-in-out;
+                            border-radius:5px;
+                            -moz-border-radius:5px;
+
+                            &:nth-child(1) {
+                                top: 0px;
+                                -webkit-transform-origin: left center;
+                                -moz-transform-origin: left center;
+                                -o-transform-origin: left center;
+                                transform-origin: left center;
+                            }
+
+                            &:nth-child(2) {
+                                top: 10px;
+                                -webkit-transform-origin: left center;
+                                -moz-transform-origin: left center;
+                                -o-transform-origin: left center;
+                                transform-origin: left center;
+                            }
+
+                            &:nth-child(3) {
+                                top: 20px;
+                                -webkit-transform-origin: left center;
+                                -moz-transform-origin: left center;
+                                -o-transform-origin: left center;
+                                transform-origin: left center;
+                            }
+                        }
+                    }
+
+                    .menuBtn.open { 
+                        z-index: 1;
+
+                        span {
+                            background:white;
+                            &:nth-child(1) {
+                                -webkit-transform: rotate(45deg);
+                                -moz-transform: rotate(45deg);
+                                -o-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                                top: -3px;
+                                left: 8px;
+                            }
+                            &:nth-child(2) {
+                                width: 0%;
+                                opacity: 0;
+                            }
+                            &:nth-child(3) {
+                                -webkit-transform: rotate(-45deg);
+                                -moz-transform: rotate(-45deg);
+                                -o-transform: rotate(-45deg);
+                                transform: rotate(-45deg);
+                                top: 30px;
+                                left: 8px;
+                            }
+                        }
+
+                    }
+
+
+
+
+                    .menu-mobile-menu-container {
+                        display:none;
+                        position: fixed;
+                        z-index: 9998;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        height: 100vh;
+                        background: $accent;
+
+                        ul#menu-mobile-menu {
+                            display:block;
+                            position:absolute;
+                            top:50%;
+                            left:50%;
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            -webkit-transform: translate(-50%,-50%);
+                            -moz-transform: translate(-50%,-50%);
+                            -o-transform: translate(-50%,-50%);
+                            transform: translate(-50%,-50%);
+
+                            li {
+                                display:block;
+                                clear:both;
+                                width:100%;
+                                text-align:center;
+                                text-transform:uppercase;
+                                padding:1em;
+                                margin:0;
+                                background:$accent;
+
+
+                                a {
+                                    color:white;
+                                    font-size:2em;
+                                    font-weight:600;
+
+                                    @media (max-width: 767px) { font-size:5vw }
+
+                                    &:link {}
+                                    &:visited {color:white;}
+                                    &:hover, &:focus {color:white; font-weight:800;}
+                                    &:active {color:white; font-weight:800;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }//End of header
+
+
+        .header_pages {
+            position: relative;
+
+            nav.top-navigation, nav.main-navigation {
+                background: $opposite;
+            }
+        }
+    }
+}
+
+
+
+
+
+

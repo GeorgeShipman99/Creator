@@ -1,0 +1,255 @@
+html {
+    body {
+        .wrapper {
+            .menu_block {
+                margin: 0em;
+
+                .container {  
+                    padding-top: 2em;
+                    padding-bottom:1.5em;
+                    border-bottom: 1px solid rgba(100,100,100,0.2);
+                }
+
+                .cont {
+                    display: flex;
+                    position: relative;
+                    width: 100%;
+                    flex-direction: row;
+
+                    @media (max-width: 768px) { display: block; }
+
+                    .text { 
+                        display: block;
+                        position: relative;
+                        float: left;
+                        width: 50%;
+                        flex-direction: column;
+                        justify-content: center;
+                        resize: vertical;
+                        align-items:flex-start;
+                        background: transparent;
+
+                        @media (max-width: 768px) { 
+                            display: block;
+                            width:100%;
+                            float:none;
+                            margin: 0;
+                        }
+
+                        .text-block {
+                            display: -webkit-box;      
+                            display: -moz-box;       
+                            display: -ms-flexbox;     
+                            display: -webkit-flex;     
+                            display: flex; 
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            align-content: center;
+                            padding: 1em 2em 1em 0em;
+                            resize: vertical;
+                            margin: 0;
+                            width: 100%;
+                            top:0;
+                            left:0;
+
+                            @media (max-width: 996px) { 
+                                top: initial;
+                                left: initial;
+                                position:relative;
+                                padding: 2em 1em;
+                                -webkit-transform: none;
+                                -moz-transform: none;
+                                -o-transform: none;
+                                transform: none;
+                            }
+
+                            @media (max-width: 776px) { display: block; }
+                                        
+                            h2 { 
+                                text-transform:uppercase;
+                                font-weight:100;
+                            }
+
+                            h2.title_option {
+                                position: relative;
+                                display: block;
+                                width: 100%;
+                                clear: both;
+                                font-weight: 300;
+                                font-size: 1.2em;
+                                color: $accent;
+                                font-weight: 300;
+                                padding: 2px 0px 0px;
+                                text-align: left;
+                                margin: 0 0 2em;
+                                line-height: 108%;
+                                
+                                span {
+                                    font-weight: 700;
+                                    border-bottom: 3px solid #d62135;
+                                    font-size: 1.5em;
+                                    font-weight: 800;
+                                    margin-right:10px;
+
+                                    @media (max-width: 776px) { 
+                                        border-bottom: 0px;
+                                    }
+                                }
+                            }
+
+                            .menu_item {
+                                position:relative;
+                                display: inline-block;
+                                color: $opposite;
+                                -webkit-box-flex: 0 0 100%;
+                                -moz-box-flex: 0 0 100%;
+                                width:100%;
+                                -webkit-flex: 0 0 100%;
+                                -ms-flex: 0 0 100%;
+                                flex: 0 0 100%;
+                                align-items: center;
+                                justify-content: space-between;
+                                align-self: start;
+                                margin-right:1em;
+                                text-align:left;
+                                margin-bottom:.8em;
+
+                                @media (max-width: 776px) { 
+                                    width:100%;
+                                    width: calc(100%);               
+                                }
+
+                                h3.title-heading {
+                                    display: -webkit-box;      
+                                    display: -moz-box;       
+                                    display: -ms-flexbox;     
+                                    display: -webkit-flex;     
+                                    display: flex; 
+                                    -ms-flex-wrap: nowrap;
+                                    flex-wrap: nowrap;
+                                    flex-direction: row;
+                                    color:$opposite;
+                                    font-size:1.2em;
+                                    line-height: 110%;
+                                    margin-bottom: .35em;
+                                    font-weight:800;
+
+                                    @media (max-width: 1400px) { font-size:1.1em; }
+                                    @media (max-width: 996px) { font-size:1em; }
+
+                                    span { display: block;}
+
+                                    .title {
+                                        position:relative;
+                                        z-index:1;
+                                        padding-right: .5em;
+                                        display: block;
+                                        width: auto;
+                                        background-color:white; 
+
+                                    }
+                                    .price {
+                                        display: block;
+                                        font-weight: 500;
+                                        text-align: right;
+                                        width: auto;
+                                    }
+                                    .dots {
+                                        position: absolute;
+                                        top: 26px;
+                                        left: 0;
+                                        right: 0;
+                                        z-index: 0;
+                                        margin: 0;
+                                        border: 0;
+                                         height: 3px;
+                                        display: block;
+                                        background-image: radial-gradient(circle closest-side, currentColor 50%, transparent 1%);
+                                        background-position: bottom;
+                                        background-size: 6px 3px;
+                                        background-repeat: repeat-x;
+                                    }
+
+                        		}
+
+                                p { 
+                                    line-height:1.2em;
+                                    margin-bottom:10px;
+
+                                    strong {
+                                        color: $accent;
+                                        font-weight:800;
+                                        font-size:.8em;
+                                        letter-spacing:1px;
+                                    }
+                                }
+                        	}
+                        }
+                    }
+
+                    .text > * {vertical-align:middle;}
+
+                    .img {
+                            display: block;
+                            position: relative;
+                            float: left;
+                            width: 50%;
+                            height: auto;
+
+                            @media (max-width: 768px) { 
+                                    width: 100vw;
+                                    position: relative;
+                                    left: 50%;
+                                    right: 50%;
+                                    margin-left: -50vw;
+                                    margin-right: -50vw;
+                                    padding: 0;
+                                    margin-top: 1em;
+                                    margin-bottom: 1em;
+                            } 
+
+                        	img {
+                        			width:100%;
+                        			height:auto;
+                            		display: block;
+                            		padding: 0;
+                            		resize: vertical;
+                            		overflow: auto;
+                            		margin: 0;
+                        	}
+                        }
+
+                        .img > * {vertical-align:middle;}
+
+                        .half {width:50%; @media (max-width: 768px) {width:100%;}}
+                        .two_fifth {width: 40%; @media (max-width: 768px) {width:100%;}}
+                        .third {width: 33.3333%; @media (max-width: 768px) {width:100%;}}
+                        .quarter {width: 25%; @media (max-width: 768px) {width:100%;}}
+                        .three_quarter {width: 75%; @media (max-width: 768px) {width:100%;}}
+                        .two_third {width: 66.6666%; @media (max-width: 768px) {width:100%;}}
+                        .three_fifth {width: 60%; @media (max-width: 768px) {width:100%;}}
+
+                    
+                }
+
+                .cont > * {vertical-align:middle;}
+
+                .row-reverse {
+                    flex-direction: row-reverse;
+                    .text {
+                        .text-block {
+                            padding: 1em 0 1em 2em;
+                            @media (max-width: 996px) { padding: 2em 1em; }
+                        }
+                    }
+                }
+            }
+
+            .no_border { 
+                .container {border-bottom: 0px; }
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+html {
+    body {
+        .wrapper {
+            .menu_sides {
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                .container {
+                    padding-top: 0em;
+                    padding-bottom:0em;
+                }
+
+                .cont {
+                    display: flex;
+                    position: relative;
+                    width: 100%;
+                    flex-direction: row;
+                    
+                    @media (max-width: 768px) { display: block; }
+
+                	.text { 
+                		display: block;
+                    	position: relative;
+                    	float: left;
+                    	width: calc(50% - 1em);
+                    	flex-direction: column;
+                    	justify-content: center;
+                    	resize: vertical;
+                        align-items:flex-start;
+                        background: transparent;
+                        border: 2px solid black;
+ 
+                        
+                        @media (min-width: 768px) { 
+                            &:first-of-type {
+                                margin-right: 2em;
+                            }
+                        }
+
+                        @media (max-width: 768px) { 
+                            display: block;
+                            width:100%;
+                            float:none;
+                            margin: 0 0 5em;
+                        }
+
+                		.text-block {
+                            display: -webkit-box;      
+                            display: -moz-box;       
+                            display: -ms-flexbox;     
+                            display: -webkit-flex;     
+                            display: flex; 
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            align-content: center;
+                    		padding: 0 2em 1em;
+                    		resize: vertical;
+                    		margin: 0;
+                            width:100%;
+                    		top:0;
+                            left:0;
+
+                            @media (max-width: 996px) { 
+                                top: initial;
+                                left: initial;
+                                position:relative;
+                                -webkit-transform: none;
+                                -moz-transform: none;
+                                -o-transform: none;
+                                transform: none;
+                            }
+
+                            @media (max-width: 776px) {display: block;}
+
+                            h2 { 
+                                text-transform:uppercase;
+                                font-weight:100;
+                            }
+
+                            h2.title_option {
+                                position: relative;
+                                display: inline-block;
+                                width: auto;
+                                font-weight: 700;
+                                font-size: 2em;
+                                color: $accent;
+                                font-weight: bolder;
+                                background: white;
+                                top: -.8em;
+                                padding: 2px 0px 0px;
+                                text-align: center;
+                                margin: 0 auto;
+                                line-height: 108%;
+                                border-top: 3px solid $accent;
+                                border-bottom: 3px solid $accent;
+                                outline: 10px solid white;
+                            }
+
+                            .menu_item {
+                                position:relative;
+                                display: inline-block;
+                                -webkit-box-flex: 0 0 100%;
+                                -moz-box-flex: 0 0 100%;
+                                width:100%;
+                                -webkit-flex: 0 0 100%;
+                                -ms-flex: 0 0 100%;
+                                flex: 0 0 100%;
+                                align-items: center;
+                                justify-content: space-between;
+                                align-self: start;
+                                text-align:left;
+                                margin-bottom:.8em;
+
+                                &:before {
+
+                                }
+
+
+                                h3.title-heading {
+                                    display: -webkit-box;      
+                                    display: -moz-box;       
+                                    display: -ms-flexbox;     
+                                    display: -webkit-flex;     
+                                    display: flex; 
+                                    -ms-flex-wrap: nowrap;
+                                    flex-wrap: nowrap;
+                                    flex-direction: row;
+                                    color: $opposite;
+                                    font-size:1.2em;
+                                    line-height: 110%;
+                                    margin-bottom: .35em;
+                                    font-weight:800;
+
+                                    @media (max-width: 1400px) { font-size:1.1em; }
+                                    @media (max-width: 996px) { font-size:1em; }
+
+                                    span { 
+                                        display: block;
+
+                                        strong {
+                                            color: $accent;
+                                            font-weight:bolder;
+                                            font-size:.8em;
+                                            letter-spacing:1px;
+                                            padding: 0 0 0 .5em;
+                                        }
+                                    }
+
+                                    .title {
+                                        padding-right: .5em;
+                                        display: block;
+                                        flex-grow: 1;                           
+                                    }
+                                    .price {
+                                        display: block;
+                                        font-weight: 500;
+                                        text-align: right;
+                                        width: 25%
+                                    }
+                                    .dots {
+                                        position: absolute;
+                                        top: 26px;
+                                        left: 0;
+                                        right: 0;
+                                        z-index: 1;
+                                        margin: 0;
+                                        border: 0;
+                                        height: 3px;
+                                        display: block;
+                                        background-image: radial-gradient(circle closest-side, currentColor 50%, transparent 1%);
+                                        background-position: bottom;
+                                        background-size: 6px 3px;
+                                        background-repeat: repeat-x;
+                                    }
+                                }
+
+                                .th {
+                                    span { 
+                                        color: $accent;
+                                        font-weight:bolder;
+                                        font-size: .9em;
+                                    }
+
+                                    .price {
+                                        color: #555;
+                                        font-size: .9em;
+                                        font-weight:300;
+                                    }
+                                    .dots {
+                                        display: none !important;
+                                    }
+                                }
+
+                                h4 {
+                                    color: #555555;
+                                    font-size: 1.1em;
+                                }
+                			}
+                		}
+                		.text > * {vertical-align:middle;}
+                	}
+
+                	.cont > * {vertical-align:middle;}
+                }
+            }
+        }
+    }
+}
